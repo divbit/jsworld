@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript OnChange</title>
+</head>
+<body>
+
+<label for="month">Select month: </label>
+<select name="" id="month">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+</select>
+
+<h1>January</h1>
+
+
+<script>
+    console.log(Math.sqrt(289));
+
+    var select = document.querySelector('select');
+    var h1 = document.querySelector('h1');
+
+    select.onchange = function() {
+
+        h1.textContent = select.value;
+    }
+
+</script>
+</body>
+</html>
